@@ -88,7 +88,7 @@ functions:
           - dynamodb:Query
          Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.DIARIES_TABLE}
 
-  CreateTodo:
+  CreateDiary:
     handler: src/lambda/http/createDiary.handler
     events:
       - http:
@@ -108,7 +108,7 @@ functions:
           - dynamodb:PutItem
          Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.DIARIES_TABLE}
 
-  UpdateTodo:
+  UpdateDiary:
     handler: src/lambda/http/updateDiary.handler
     events:
       - http:
@@ -128,7 +128,7 @@ functions:
           - dynamodb:UpdateItem
          Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.DIARIES_TABLE}
 
-  DeleteTodo:
+  DeleteDiary:
     handler: src/lambda/http/deleteDiary.handler
     events:
       - http:
