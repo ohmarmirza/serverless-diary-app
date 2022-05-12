@@ -21,9 +21,9 @@ export const handler = middy(
 
     const userId = getUserId(event)
     let diaries = []
-    const date = event.queryStringParameters.date
+    const date = event.queryStringParameters?.date
 
-    if (isDate(date)) {
+    if (date && isDate(date)) {
       diaries = await getDiariesForUserByDate(userId, new Date(date));
     }
     else {
