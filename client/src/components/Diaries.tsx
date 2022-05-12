@@ -119,16 +119,9 @@ export class Diaries extends React.PureComponent<DiariesProps, DiariesState> {
           />
           <br></br>
           <Input
-            action={{
-              color: 'teal',
-              labelPosition: 'left',
-              icon: 'add',
-              content: 'New diary',
-              onClick: this.onDiaryCreate
-            }}
             fluid
             actionPosition="left"
-            placeholder="Nice Weather today..."
+            placeholder="Add description here"
             onChange={this.handleDescriptionChange}
           />
         </Grid.Column>
