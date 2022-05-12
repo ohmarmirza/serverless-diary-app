@@ -74,20 +74,6 @@ functions:
           - dynamodb:Query
          Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.DIARIES_TABLE}
 
-  GetDiariesByDate:
-    handler: src/lambda/http/getDiariesByDate.handler
-    events:
-      - http:
-          method: get
-          path: diaries/{date}
-          cors: true
-          authorizer: Auth
-    iamRoleStatements:
-       - Effect: Allow
-         Action:
-          - dynamodb:Query
-         Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.DIARIES_TABLE}
-
   CreateDiary:
     handler: src/lambda/http/createDiary.handler
     events:
