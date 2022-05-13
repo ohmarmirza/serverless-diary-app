@@ -49,19 +49,19 @@ The application should store Diary items, and each Diary item contains the follo
   stack: serverless-diary-app-dev
   
   endpoints:
-    GET - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries
-    POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries
-    PATCH - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}
-    DELETE - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}
-    POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}/attachment
+    * GET - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries
+    * POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries
+    * PATCH - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}
+    * DELETE - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}
+    * POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}/attachment
   
   functions:
-    Auth: serverless-diary-app-dev-Auth
-    GetDiaries: serverless-diary-app-dev-GetDiaries
-    CreateDiary: serverless-diary-app-dev-CreateDiary
-    UpdateDiary: serverless-diary-app-dev-UpdateDiary
-    DeleteDiary: serverless-diary-app-dev-DeleteDiary
-    GenerateUploadUrl: serverless-diary-app-dev-GenerateUploadUrl
+    * Auth: serverless-diary-app-dev-Auth
+    * GetDiaries: serverless-diary-app-dev-GetDiaries
+    * CreateDiary: serverless-diary-app-dev-CreateDiary
+    * UpdateDiary: serverless-diary-app-dev-UpdateDiary
+    * DeleteDiary: serverless-diary-app-dev-DeleteDiary
+    * GenerateUploadUrl: serverless-diary-app-dev-GenerateUploadUrl
 
 # Frontend
 
