@@ -43,25 +43,25 @@ The application should store Diary items, and each Diary item contains the follo
    
 # Service Information
 
-  service: serverless-diary-app. 
-  stage: dev. 
-  region: us-east-1. 
-  stack: serverless-diary-app-dev. 
+  service: serverless-diary-app<br />
+  stage: dev<br />
+  region: us-east-1<br />
+  stack: serverless-diary-app-dev<br />
   
-  endpoints:  
-    * GET - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries. 
-    * POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries. 
-    * PATCH - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}. 
-    * DELETE - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}. 
-    * POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}/attachment. 
+### Endpoints:  
+    - GET - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries<br />
+    - POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries<br />
+    - PATCH - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}<br />
+    - DELETE - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}<br />
+    - POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}/attachment<br />
   
-  functions:  
-    * Auth: serverless-diary-app-dev-Auth. 
-    * GetDiaries: serverless-diary-app-dev-GetDiaries. 
-    * CreateDiary: serverless-diary-app-dev-CreateDiary. 
-    * UpdateDiary: serverless-diary-app-dev-UpdateDiary. 
-    * DeleteDiary: serverless-diary-app-dev-DeleteDiary. 
-    * GenerateUploadUrl: serverless-diary-app-dev-GenerateUploadUrl. 
+### Functions:  
+    - Auth: serverless-diary-app-dev-Auth<br />
+    - GetDiaries: serverless-diary-app-dev-GetDiaries<br />
+    - CreateDiary: serverless-diary-app-dev-CreateDiary<br />
+    - UpdateDiary: serverless-diary-app-dev-UpdateDiary<br />
+    - DeleteDiary: serverless-diary-app-dev-DeleteDiary<br />
+    - GenerateUploadUrl: serverless-diary-app-dev-GenerateUploadUrl<br />
 
 # Frontend
 
