@@ -8,7 +8,7 @@ The code from lesson 4 (serverless todo app) was re-used.
 
 This application will allow creating/removing/updating/fetching Diary items. Each Diary item can optionally have an attachment image. Each user only has access to their own diaries.
 
-# TODO items
+# Diary entries
 
 The application should store Diary items, and each Diary item contains the following fields:
 
@@ -47,12 +47,14 @@ The application should store Diary items, and each Diary item contains the follo
   stage: dev
   region: us-east-1
   stack: serverless-diary-app-dev
+  
   endpoints:
     GET - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries
     POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries
     PATCH - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}
     DELETE - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}
     POST - https://q8k66u2w8f.execute-api.us-east-1.amazonaws.com/dev/diaries/{diaryId}/attachment
+  
   functions:
     Auth: serverless-diary-app-dev-Auth
     GetDiaries: serverless-diary-app-dev-GetDiaries
