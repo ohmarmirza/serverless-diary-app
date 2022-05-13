@@ -27,7 +27,7 @@ export async function createDiary(userId: string, request: CreateDiaryRequest): 
     const diaryItem: DiaryItem = {
         userId: userId,
         diaryId: diaryId,
-        createdAt: new Date().toISOString(),
+        createdAt: new Date().toISOString().split('T')[0],
         title: request.title,
         description: request.description,
         attachmentUrl: `https://${bucketName}.s3.amazonaws.com/${diaryId}`
